@@ -1,7 +1,7 @@
 use axum::{
     routing::get,
     Router
-    }
+    };
 
 #[tokio::main]
 async fn main(){
@@ -13,7 +13,7 @@ async fn main(){
     .await
     .unwrap();
 
-    println("Server running on http://localhost:3000")
+    println!("Server running on http://localhost:3000");
 
     axum::serve(listener, app)
     .await
